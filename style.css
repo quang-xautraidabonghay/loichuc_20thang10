@@ -1,0 +1,39 @@
+:root{
+  --pink-1: #fff0f4;
+  --pink-2: #ffd6e3;
+  --accent: #ff5c8a;
+  --text: #3b1534;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, sans-serif;background:linear-gradient(180deg,var(--pink-1),var(--pink-2));-webkit-font-smoothing:antialiased;}
+canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+.card{
+  position:relative;z-index:2;
+  max-width:760px;margin:5vh auto;padding:28px;border-radius:18px;
+  background:rgba(255,255,255,0.9);box-shadow:0 10px 30px rgba(101,24,64,0.08);
+  text-align:center;
+}
+h1{margin:0;font-size:28px;color:var(--accent)}
+.subtitle{color:var(--text);margin-top:8px;margin-bottom:18px}
+.form{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+input[type="text"]{
+  padding:12px 14px;border-radius:12px;border:1px solid rgba(59,21,52,0.06);
+  width:60%;min-width:180px;font-size:16px;
+}
+button{
+  padding:10px 16px;border-radius:12px;border:none;background:var(--accent);color:white;font-weight:600;cursor:pointer;
+  box-shadow:0 6px 18px rgba(255,92,138,0.18);
+}
+button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(255,92,138,0.14)}
+.hidden{display:none}
+#wishText{white-space:pre-wrap;margin-top:18px;font-size:18px;color:var(--text);line-height:1.5;padding:12px}
+.controls{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.credit{margin-top:20px;color:rgba(59,21,52,0.6);font-size:13px}
+
+/* Responsive */
+@media (max-width:600px){
+  .card{margin:4vh 14px;padding:18px}
+  input[type="text"]{width:100%}
+  h1{font-size:22px}
+  #wishText{font-size:16px}
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thiệp 20/10 - Lời chúc</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <main class="card">
+    <h1>💐 Chúc mừng 20/10 💐</h1>
+    <p class="subtitle">Nhập tên để nhận lời chúc dễ thương và ý nghĩa nhé!</p>
+
+    <div class="form">
+      <input id="nameInput" type="text" placeholder="Nhập tên của bạn..." />
+      <button id="wishBtn">Nhận lời chúc</button>
+    </div>
+
+    <section id="wishArea" class="hidden">
+      <p id="wishText"></p>
+      <div class="controls">
+        <button id="againBtn">Gửi lại lời chúc khác</button>
+        <button id="toggleMusic">🔈 Bật nhạc</button>
+      </div>
+    </section>
+
+    <footer class="credit">Thiệp web 20/10 — thiết kế nhẹ nhàng, màu hồng 💗</footer>
+  </main>
+
+  <!-- Nhạc nền lo-fi miễn phí (từ pixabay) -->
+  <audio id="bgMusic" loop src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_1b1f2a2f61.mp3?filename=lofi-chill-11226.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
